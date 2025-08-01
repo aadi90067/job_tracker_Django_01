@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/Register.css' %}">
+</head>
+<body>
+    <div class="home">
+        <nav class="nav">
+            <div class="log">
+                <h5>Budget <span>Tracker</span></h5>
+            </div>
+        </nav>
+
+        <div class="login">
+            <h2>Register your Account</h2>
+
+            {% if messages %}
+                {% for message in messages %}
+                    <p style="color:red;">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+                <div class="name">
+                    <label for="Username">UserName:</label><br>
+                    <input type="text" id="name" name="username" required>
+                </div>
+                <div class="gmail">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="gmail" name="email" required>
+                </div>
+                <div class="passw">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="pass" name="password" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+
+            <p>If you already have an account, just <a href="user_login">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

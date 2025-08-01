@@ -1,0 +1,136 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #009879;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.nav .log h5 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav .log h5 span {
+  color: #ffdd57;
+}
+
+.lo-btn .btn,
+.lo-btn .btn-1 {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #009879;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.lo-btn .btn:hover,
+.lo-btn .btn-1:hover {
+  background-color: #ffdd57;
+  color: #000;
+}
+
+/* Form Styles */
+#expense-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form-row input,
+.form-row select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-row button {
+  padding: 8px 16px;
+  background-color: #009879;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-row button:hover {
+  background-color: #007e65;
+}
+
+/* Clear Button */
+.danger-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0 30px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.danger-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Expenses List */
+#expense-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#expense-list li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-left: 6px solid #009879;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Total Display */
+.total-box {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+
+.dark-mode .nav {
+  background-color: #333;
+}
+
+.dark-mode .danger-btn {
+  background-color: #ff4d4d;
+}
+
+.dark-mode #expense-list li {
+  background-color: #333;
+  color: #f1f1f1;
+  border-color: #ffdd57;
+}

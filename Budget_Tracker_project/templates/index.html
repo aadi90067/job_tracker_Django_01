@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="home">
+        <nav class="nav">
+            <div class="log">
+                <h5>Budget <span>Tracker</span></h5>
+            </div>
+            <div class="lo-btn">
+                <a href="user_login" class="btn">Log In</a>
+                <a href="Register" class="btn">Register</a>
+            </div>
+        </nav>
+        <div class="main_home">
+            <div class="main">
+                <div class="text">
+                    <h1>Take Control of Your Finances</h1>
+                    <h4>Track Your Expenses, Manage <br>
+                    Your Budget, and Achieve Your Financial Goals.</h4>
+                    <button class="btn-2"><a href="Register">Get Started</a></button>
+                </div>
+                <div class="photo">
+                    <img src="{% static 'img/first.jpg' %}" alt="Budget Tracker Illustration">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
